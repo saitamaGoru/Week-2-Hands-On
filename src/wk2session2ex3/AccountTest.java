@@ -22,7 +22,11 @@ public class AccountTest {
 		System.out.printf("%s balance: $%.2f%n%n",account1.getName(),account1.getBalance());
 		System.out.printf("%s balance: $%.2f%n%n",account2.getName(),account2.getBalance());
 		
-		//double 
+		double withdrawlAmount;
+		System.out.print("Enter the withdrawl amount for account2:");
+		withdrawlAmount = input.nextDouble();
+		account2.withdraw(withdrawlAmount);
+		System.out.printf("%s balance: $%.2f%n%n",account2.getName(),account2.getBalance());
 		
 	}
 
